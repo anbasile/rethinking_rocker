@@ -29,5 +29,8 @@ install2.r --error --skipmissing --skipinstalled -n "$NCPUS" \
 # Install rethinking
 installGithub.r rmcelreath/rethinking
 
+R -e 'library(cmdstanr);install_cmdstan()'
+
+
 # Cleanup
 rm -rf /tmp/downloaded_packages
