@@ -22,5 +22,6 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v4
         with:
+          file: "{{defaultContext}}:dockerfiles/rethinking_4.2.3.Dockerfile"
           push: true
           tags: angelobasile/rethinking-rocker:latest
