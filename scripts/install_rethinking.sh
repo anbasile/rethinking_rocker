@@ -24,7 +24,8 @@ install2.r --error --skipmissing --skipinstalled -n "$NCPUS" \
     mvtnorm \
     loo \
     dagitty \
-    shape
+    shape \
+    brms
 
 # Install rethinking
 installGithub.r rmcelreath/rethinking
