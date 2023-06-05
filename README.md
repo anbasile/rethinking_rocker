@@ -5,5 +5,5 @@ This repository contains a Dockerfile for a Docker container ready to use if you
 ## Usage
 
 ```bash
-docker run -e PASSWORD=your-password --network host angelobasile/rethinking-rocker
+docker run -e PASSWORD=your-password -e ROOT=true --network host angelobasile/rethinking-rocker
 ```
