@@ -2,7 +2,7 @@
 
 ## What Is This?
 
-This is a fully configured, ready-to-use environment for working through Statistical Rethinking with CmdStanR, VSCode Server, and RStudio Server, all neatly packed into a Docker container.
+This is a fully configured, ready-to-use environment for working through [Statistical Rethinking](https://xcelab.net/rm/) with [CmdStanR](https://mc-stan.org/cmdstanr/), [VSCode Server](https://code.visualstudio.com/docs/remote/vscode-server), and [RStudio Server](https://posit.co/download/rstudio-server/), all neatly packed into a Docker container.
 
 You can pull a pre-built image and start working immediately or build it yourself if you like having everything under your control. Either way, you’ll skip the hassle of installing dependencies and focus on learning Bayesian modeling.
 
