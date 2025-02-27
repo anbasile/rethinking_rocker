@@ -1,3 +1,5 @@
+[![Docker](https://github.com/anbasile/rethinking_rocker/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/anbasile/rethinking_rocker/actions/workflows/docker-publish.yml)
+
 # Statistical Rethinking in a Box
 
 ## What Is This?
