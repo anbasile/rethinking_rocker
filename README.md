@@ -15,7 +15,7 @@ You can pull a pre-built image and start working immediately or build it yoursel
 If you just want to get started without worrying about setup, run this:
 
 ```
-docker run --rm -p 8787:8787 -p 8080:8080 -e PASSWORD=yourpassword -it ghcr.io/anbasile/rethinking-rocker:latest
+docker run --rm -p 8787:8787 -p 8080:8080 -e PASSWORD=yourpassword -it ghcr.io/anbasile/rethinking_rocker:latest
 
 ```
 
