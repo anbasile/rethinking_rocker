@@ -4,8 +4,11 @@ FROM rocker/tidyverse:4.2.3
 
 RUN apt-get update && apt-get install -y curl g++ build-essential
 
+RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.7.34/quarto-1.7.34-linux-amd64.tar.gz
+
+RUN apt-get install ./quarto-1.7.34-linux-amd64.tar.gz
+
 RUN install2.r --error --skipinstalled -r https://mc-stan.org/r-packages/ -r getOption \
-    V8 \
     abind \
     checkmate \
     cmdstanr \
@@ -18,9 +21,10 @@ RUN install2.r --error --skipinstalled -r https://mc-stan.org/r-packages/ -r get
     mvtnorm \
     numDeriv \
     posterior \
+    rmarkdown \
     shape \
-    tensorA
-
+    tensorA \
+    V8
 
 # Install CmdStan
 RUN R -e 'library(cmdstanr); install_cmdstan()'
