@@ -4,9 +4,9 @@ FROM rocker/tidyverse:4.2.3
 
 RUN apt-get update && apt-get install -y curl g++ build-essential
 
-RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.7.34/quarto-1.7.34-linux-amd64.tar.gz
+RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.8.21/quarto-1.8.21-linux-amd64.deb
 
-RUN apt-get install ./quarto-1.7.34-linux-amd64.tar.gz
+RUN apt-get install ./quarto-1.8.21-linux-amd64.deb
 
 RUN install2.r --error --skipinstalled -r https://mc-stan.org/r-packages/ -r getOption \
     abind \
